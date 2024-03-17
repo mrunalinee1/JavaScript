@@ -1,0 +1,31 @@
+Recall that break exits the loop entirely when its condition is met - ignoring all subsequent iterations.
+
+continue statement:
+
+The continue statement is used to skip the rest of the code inside the loop for the current iteration and move on to the next iteration.
+It is often used to skip specific iterations based on a certain condition without exiting the entire loop.
+Example of using continue in a for loop:
+
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue;
+  }
+  console.log(i);
+}
+
+// Solution as follows
+
+
+function printNumbers(n) {
+  for(var i = 1; i <= 10; i++) {
+    if (i === n) {
+        continue;
+    }
+    console.log(i);
+   }
+}
+
+function solve(n) {
+ printNumbers(n);
+}
+  
