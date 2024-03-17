@@ -27,6 +27,16 @@ function performTask(callback)
   callback(result);
 }
 
+// Submit the code and observe the flow
+
+function add(sum)
+{
+    var a=10+5
+    sum(a);
+}
+add((c)=>
+console.log(c));
+
 performTask((output) => console.log(output)); 
 
 
