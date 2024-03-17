@@ -1,0 +1,26 @@
+Callback Function
+
+A callback function in JavaScript is a function passed as an argument to another function and executed at a later time. It is commonly used in asynchronous operations for tasks like handling responses from APIs or events.
+Example:
+
+function performTask(callback) {
+  // Simulating an asynchronous operation
+  console.log("Performing the task...");
+  const result = "Task completed!";
+  callback(result);
+}
+
+performTask((output) => console.log(output)); // what's this arrow ? read the next section.
+In this example, the performTask function takes a callback function as an argument and invokes it with a result after completing the simulated asynchronous task.
+
+Arrow Function
+
+An arrow function is a concise way to write functions in JavaScript, introduced quite late. It's particularly useful for short, one-liner functions and is often used in callbacks for its simplicity.
+
+  // Solution as follows
+
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('data', function (input) {
+  console.log(input);
+});
