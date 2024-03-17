@@ -17,10 +17,16 @@ Arrow Function
 
 An arrow function is a concise way to write functions in JavaScript, introduced quite late. It's particularly useful for short, one-liner functions and is often used in callbacks for its simplicity.
 
-  // Solution as follows
+// Submit the code and observe the flow
 
-process.stdin.setEncoding('utf8');
+function performTask(callback) 
+{
+  // Simulating an asynchronous operation
+  console.log("Performing the task...");
+  const result = "Task completed!";
+  callback(result);
+}
 
-process.stdin.on('data', function (input) {
-  console.log(input);
-});
+performTask((output) => console.log(output)); 
+
+
