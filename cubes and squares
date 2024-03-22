@@ -1,0 +1,16 @@
+Write a program which does the following
+
+Take an integer input
+Output square and cube of the taken integer to the console on separate lines as per the sample output below
+Note
+Square of an integer N = N^2
+Cube of an integer N = N^3
+
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', function(input) {
+  const N = parseInt(input.trim());
+  const square = N * N;
+  const cube = N * N * N;
+  console.log("Square is:", square);
+  console.log("Cube is:", cube);
+});
