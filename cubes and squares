@@ -14,3 +14,13 @@ process.stdin.on('data', function(input) {
   console.log("Square is:", square);
   console.log("Cube is:", cube);
 });
+
+
+// your code goes here
+process.stdin.setEncoding('utf8');
+process.stdin.on('data',function(n)
+{
+   // console.log(input);
+    console.log("Square is: "+ n*n);
+    console.log("Cube is: "+ n*n*n);
+})
