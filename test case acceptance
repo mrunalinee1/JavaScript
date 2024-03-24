@@ -1,0 +1,33 @@
+Task
+Lets write a program in the IDE which performs the following
+
+The 1st line of input is an integer 
+�
+t - the count of test cases
+Each test case consists of 2 lines of input
+The 1st line of input has 2 space separated integers - accept them as variables 
+�
+A and 
+�
+B
+The 2nd line of input has 3 space separated integers - accept them as variables 
+�
+C, 
+�
+D and 
+�
+E
+For each test case - output all integers on a single line
+
+
+// your code goes here
+process.stdin.setEncoding('utf8');
+process.stdin.on('data',function(input){
+    const testCaseCount= input.trim().split('\n');
+    const tcase= testCaseCount[0];
+    
+    for(let i=1;i<=2*tcase;i+=2)
+    {
+        console.log(testCaseCount[i]+" "+testCaseCount[i+1])
+    }
+})
